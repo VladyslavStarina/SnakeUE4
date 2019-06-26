@@ -7,7 +7,6 @@
 #include "Components/BoxComponent.h"
 #include "MyPawnCamera.h"
 
-
 // Sets default values
 AMySnakeActor::AMySnakeActor()
 {
@@ -21,8 +20,6 @@ AMySnakeActor::AMySnakeActor()
 	VisibleBodyChunk = 3;
 	SnakeStepTimer = 0;
 	bSnakeStop = true;
-
-
 	CreateSnakeBody();
 }
 
@@ -90,7 +87,6 @@ void AMySnakeActor::CreateSnakeBody()
 	UStaticMeshComponent* SnakeHead = CreateDefaultSubobject<UStaticMeshComponent>("Chank0");
 	SetBodyChunk(SnakeHead, HeadColor, SnakeBodyMesh, NextPoint);
 	
-
 	// Create snake body
 	for (int32 i = 1; i < SnakeSize; i++)
 	{
