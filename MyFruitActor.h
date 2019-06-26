@@ -41,5 +41,4 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	const float LifeCycleDeley = 10.f;
-
 };
