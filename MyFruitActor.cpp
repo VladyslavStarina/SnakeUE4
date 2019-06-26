@@ -39,7 +39,6 @@ AMyFruitActor::AMyFruitActor()
 void AMyFruitActor::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
@@ -50,7 +49,6 @@ void AMyFruitActor::Tick(float DeltaTime)
 	LifeCycle();
 	FoodCollector();
 	FoodChank->AddLocalRotation(FRotator(5, 0, 0),false, nullptr,ETeleportType::None);
-	
 }
 
 void AMyFruitActor::FoodCollector()
