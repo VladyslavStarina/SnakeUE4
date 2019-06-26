@@ -15,7 +15,6 @@ AMyDeathActor::AMyDeathActor()
 	
 	UStaticMesh* WallMesh;
 	WallMesh = ConstructorHelpers::FObjectFinder<UStaticMesh>(TEXT("/Engine/BasicShapes/Cube")).Object;
-	
 	WallColor = ConstructorHelpers::FObjectFinderOptional<UMaterialInstance>(TEXT("/Game/SnakeContent/Materials/Danger_Inst.Danger_Inst")).Get();
 
 	UStaticMeshComponent* WallChunk;
