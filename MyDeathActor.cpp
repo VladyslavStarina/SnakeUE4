@@ -31,7 +31,6 @@ AMyDeathActor::AMyDeathActor()
 void AMyDeathActor::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
