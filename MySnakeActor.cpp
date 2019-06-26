@@ -183,29 +183,24 @@ void AMySnakeActor::NewHeadDirection(FVector & RelativeLocation, FRotator & Rela
 	switch (DirectionMoveSnake)
 	{
 	case Turn::Right:
-
 		RelativeLocation.Y += SnakeStep;
 		SetNewSnakeYawn(RelativeRotation, 90.f);
 		break;
 
 	case Turn::Left:
-		
 		RelativeLocation.Y -= SnakeStep;
 		SetNewSnakeYawn(RelativeRotation, 90.f);
 		break;
 
 	case Turn::Up:
-
 		RelativeLocation.X += SnakeStep;
 		SetNewSnakeYawn(RelativeRotation, 0.f);
 		break;
 
 	case Turn::Down:
-		
 		RelativeLocation.X -= SnakeStep;
 		SetNewSnakeYawn(RelativeRotation, 0.f);
 		break;
-
 	default:
 		break;
 	}
